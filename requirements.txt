@@ -2,3 +2,4 @@ tensorflow==2.16.1
 matplotlib==3.9.2
 numpy==1.26.4
 langchain==0.2.15
+langchain-openai==0.1.23
