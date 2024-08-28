@@ -1,7 +1,9 @@
 {
     "name": "Python 3",
-    // "features": {},
-    // Use 'forwardPorts' to make a list of ports inside the container available locally.
+    "image": "mcr.microsoft.com/devcontainers/python:0-3.11-bullseye",
+    "features": {
+        "ghcr.io/devcontainers-contrib/features/coverage-py:2": {}
+    },
     // "forwardPorts": [],
     // Use 'postCreateCommand' to run commands after the container is created.
     "postCreateCommand": "pip3 install --user -r requirements.txt",
