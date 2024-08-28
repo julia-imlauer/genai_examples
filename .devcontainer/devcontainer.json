@@ -1,5 +1,11 @@
 {
-    "features": {},
+    "name": "Python 3",
+    // "features": {},
+    // Use 'forwardPorts' to make a list of ports inside the container available locally.
+    // "forwardPorts": [],
+    // Use 'postCreateCommand' to run commands after the container is created.
+    "postCreateCommand": "pip3 install --user -r requirements.txt",
+    // Configure tool-specific properties.
     "customizations": {
         "vscode": {
             "extensions": [
@@ -11,6 +17,7 @@
                 "locale": "en"
             }
         }
-    },
-    "onCreateCommand": "[ -f requirements.txt ] && pip install -r requirements.txt; echo PS1='\"$ \"' >> ~/.bashrc"
+    }
+    // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+    // "remoteUser": "root"
 }
